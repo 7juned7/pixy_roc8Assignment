@@ -10,7 +10,7 @@ import LandingPage from './pages/LandingPage';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router  basename={process.env.PUBLIC_URL} >
         <div>
           <Routes>
             <Route exact path="/" element={<LandingPage />} />
